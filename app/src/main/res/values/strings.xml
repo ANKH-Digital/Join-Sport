@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Join Sport</string>
+    <string name="desc_appname">App Name</string>
+    <string name="txt_login">Login</string>
+    <string name="desc_onboarding_header">Header</string>
+    <string name="txt_welcome">Selamat\nDatang</string>
+    <string name="txt_subwelcome">Kami mempertemukan anda \ndengan teman sehobi</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="hint_fullname">Nama Lengkap</string>
+    <string name="hint_email">Email Anda</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="btn_login">Login</string>
+    <string name="txt_already_have_account">Sudah punya akun ?</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_log_in">Log In</string>
+    <string name="txt_didnt_have_account">Belum punya akun ?</string>
+</resources>
