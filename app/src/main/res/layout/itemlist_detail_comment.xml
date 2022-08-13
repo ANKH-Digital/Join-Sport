@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_pp_detail_comment"
+        style="@style/BasicPhotoProfile"
+        android:contentDescription="@string/desc_img_pp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_photo_profile" />
+
+    <TextView
+        android:id="@+id/iv_detail_comment_name"
+        style="@style/TimelineName"
+        android:text="@string/txt_comment_name"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_pp_detail_comment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_active"
+        style="@style/Reguler"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:text="@string/txt_detail_active"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_pp_detail_comment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_comment_name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Reguler"
+        android:layout_width="0dp"
+        android:text="@string/txt_detail_comment"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_pp_detail_comment" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1.8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#D8D8D8"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

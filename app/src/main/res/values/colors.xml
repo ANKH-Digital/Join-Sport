@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#b2b2b2</color>
+    <color name="incarnadine">#ffdfe2</color>
+    <color name="red">#FF5F6D</color>
 
     <color name="startGradient">#FFC371</color>
     <color name="endGradient">#FF5F6D</color>

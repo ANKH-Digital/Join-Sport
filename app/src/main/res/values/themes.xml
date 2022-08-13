@@ -49,6 +49,18 @@
         <item name="backgroundTint">@null</item>
     </style>
 
+    <style name="CustomCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="shapeAppearance">@style/AllSideRounded</item>
+    </style>
+
+    <style name="BasicPhotoProfile">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+    </style>
+
+
     <style name="AllSideRounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">12dp</item>
