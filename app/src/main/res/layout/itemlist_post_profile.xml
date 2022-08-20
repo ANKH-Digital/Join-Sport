@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CustomCardView"
+    android:layout_width="190dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/iv_post_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/desc_img_post_settings"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_post_settings" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_post_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_margin="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_post_settings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_post_settings"
+            app:shapeAppearanceOverlay="@style/AllSideRounded"
+            app:srcCompat="@drawable/img_post_timeline" />
+
+
+
+</com.google.android.material.card.MaterialCardView>

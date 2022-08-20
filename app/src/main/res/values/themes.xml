@@ -18,7 +18,10 @@
     <style name="CustomTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
         <item name="android:fontFamily">@font/inter_light</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColorHint">#b2b2b2</item>
