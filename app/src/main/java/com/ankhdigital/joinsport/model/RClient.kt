@@ -13,11 +13,11 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 object RClient {
     private const val BASE_URL = "https://sport.ankhproject.my.id/api/"
-    val instance : Api by lazy{
+    val instance : ApiServices by lazy{
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        retrofit.create(Api::class.java)
+        retrofit.create(ApiServices::class.java)
     }
 }
