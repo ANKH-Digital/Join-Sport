@@ -1,7 +1,7 @@
 package com.ankhdigital.joinsport.model.post
 
 import com.ankhdigital.joinsport.model.MetaRes
-import com.ankhdigital.joinsport.model.post.data.GetAllPostsData
+import com.ankhdigital.joinsport.model.post.data.CreatePostData
 import com.google.gson.annotations.SerializedName
 
 
@@ -12,8 +12,7 @@ import com.google.gson.annotations.SerializedName
  * Instagram : https://www.instagram.com/ardian_iqbal_
  * LinkedIn : https://www.linkedin.com/in/ardianiqbal
  */
-data class GetAllPostsRequest(
-    @SerializedName("meta") val meta : List<MetaRes>,
-    @SerializedName("data") val data : List<GetAllPostsData>
-
+data class CreatePostRes(
+    @SerializedName("meta") val metaData : MetaRes,
+    @SerializedName("data") val data : List<CreatePostData>
 )

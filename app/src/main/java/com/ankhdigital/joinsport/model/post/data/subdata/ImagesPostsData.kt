@@ -1,4 +1,4 @@
-package com.ankhdigital.joinsport.model.user.data
+package com.ankhdigital.joinsport.model.post.data.subdata
 
 import com.google.gson.annotations.SerializedName
 
@@ -10,11 +10,10 @@ import com.google.gson.annotations.SerializedName
  * Instagram : https://www.instagram.com/ardian_iqbal_
  * LinkedIn : https://www.linkedin.com/in/ardianiqbal
  */
-data class PostDataModel(
+data class ImagesPostsData(
     @SerializedName("id") val id : Int,
-    @SerializedName("user_id") val userId : Int,
-    @SerializedName("caption") val caption : String,
+    @SerializedName("post_id") val postId : Int,
+    @SerializedName("image") val image : String,
     @SerializedName("created_at") val createdAt : String,
-    @SerializedName("updated_at") val updateAt : String,
-    @SerializedName("images") val images : List<ImagesDataModel>
+    @SerializedName("updated_at") val updatedAt : String
 )

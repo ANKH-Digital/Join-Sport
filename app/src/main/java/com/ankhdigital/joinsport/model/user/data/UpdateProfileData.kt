@@ -12,8 +12,8 @@ import com.google.gson.annotations.SerializedName
  */
 data class UpdateProfileData(
     @SerializedName("nama") val nama : String,
-    @SerializedName("email") val email: String,
-    @SerializedName("lokasi") val lokasi : String?,
+    @SerializedName("email") val email : String,
+    @SerializedName("lokasi") val lokasi : String,
     @SerializedName("telp") val telfon : Int?,
-    @SerializedName("foto") val foto : String,
+    @SerializedName("foto") val foto : String
 )

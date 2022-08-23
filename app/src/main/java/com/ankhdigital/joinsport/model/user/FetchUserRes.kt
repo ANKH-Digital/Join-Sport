@@ -1,7 +1,7 @@
-package com.ankhdigital.joinsport.model.auth
+package com.ankhdigital.joinsport.model.user
 
 import com.ankhdigital.joinsport.model.MetaRes
-import com.ankhdigital.joinsport.model.auth.data.UserData
+import com.ankhdigital.joinsport.model.user.data.FetchUserData
 import com.google.gson.annotations.SerializedName
 
 
@@ -12,7 +12,7 @@ import com.google.gson.annotations.SerializedName
  * Instagram : https://www.instagram.com/ardian_iqbal_
  * LinkedIn : https://www.linkedin.com/in/ardianiqbal
  */
-data class RegisterRequest(
-    @SerializedName("meta") val metadata: List<MetaRes>,
-    @SerializedName("data") val data : List<UserData>
+data class FetchUserRes(
+    @SerializedName("meta") val meta : List<MetaRes>,
+    @SerializedName("data") val data : List<FetchUserData>
 )
