@@ -22,6 +22,14 @@ import retrofit2.http.*
  */
 interface ApiServices {
 
+    /* cara penggunaan API nya cukup mengeksekusi RClient.instances.{API}
+    * pada setiap activity atau fragment yang ingin mengunakan API nya
+    * lalu masukan untuk parameter auth token diambil dari model LoginRegistData.accessToken
+    *
+    * dan isi parameter untuk type RequestBody diset menjadi form-data
+    * */
+
+
     //--------------- Auth API ---------------//
     @Multipart
     @POST("register")

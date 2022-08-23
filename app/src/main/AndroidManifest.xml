@@ -21,12 +21,12 @@
         <activity
             android:name=".PlaceActivity"
             android:exported="false" />
-        <activity
-            android:name=".SettingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UploadPostActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".SettingsActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".UploadPostActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
@@ -45,9 +45,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="false" />-->
     </application>
 
 </manifest>
