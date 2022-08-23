@@ -166,11 +166,13 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_save"
         style="@style/CustomButton"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/btn_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_phone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

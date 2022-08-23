@@ -34,6 +34,7 @@
     <string name="txt_detail_comment">Hello Everyone, How are you today? Hope you all fine and blessed everyday 😉</string>
     <string name="txt_detail_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pellentesque quis tristique sem libero dignissim morbi. Turpis suscipit gravida integer morbi. Netus venenatis, consectetur lacus, cras. Vulputate orci magnis sed ipsum, vel interdum. Ac vitae eu nunc sapien leo.</string>
     <string name="txt_detail_post">Detail Post</string>
+    <string name="txt_detail_place">Detail Tempat</string>
     <string name="txt_didnt_have_account">Belum punya akun ?</string>
     <string name="txt_edit_profile">Edit Profile</string>
     <string name="txt_email">Email</string>
@@ -59,4 +60,6 @@
     <string name="txt_upload_img">Upload gambar \nanda</string>
     <string name="txt_upload_post">Upload Post</string>
     <string name="txt_welcome">Selamat\nDatang</string>
+    <string name="txt_lbl_title">Judul</string>
+    <string name="txt_lbl_address">Alamat</string>
 </resources>

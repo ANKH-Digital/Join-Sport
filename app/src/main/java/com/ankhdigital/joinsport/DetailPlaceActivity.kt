@@ -1,26 +1,28 @@
 package com.ankhdigital.joinsport
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import com.ankhdigital.joinsport.databinding.ActivityDetailBinding
+import com.ankhdigital.joinsport.databinding.ActivityPlaceDetailBinding
 
-class DetailActivity : AppCompatActivity() {
+class DetailPlaceActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDetailBinding
+    private lateinit var binding: ActivityPlaceDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityDetailBinding.inflate(layoutInflater)
+        binding = ActivityPlaceDetailBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        initUI()
+    }
+
+    private fun initUI() {
         binding.apply {
             ivBack.setOnClickListener {
-                findNavController(R.id.nav_host_fragment_activity_home).navigate(R.id.navigation_home)
+                findNavController(R.id.nav_host_fragment_activity_home).navigate(R.id.navigation_place)
             }
         }
     }

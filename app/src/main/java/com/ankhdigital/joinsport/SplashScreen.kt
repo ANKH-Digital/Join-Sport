@@ -6,6 +6,8 @@ import android.graphics.LinearGradient
 import android.graphics.Shader
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.TextPaint
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,11 +17,10 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        val ivJoinSport: ImageView = findViewById(R.id.imageView)
-
-        ivJoinSport.setOnClickListener {
-            val goToOnBoardingActivity = Intent(this, OnBoardingActivity::class.java)
-            startActivity(goToOnBoardingActivity)
-        }
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, OnBoardingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }, 3000)
     }
 }

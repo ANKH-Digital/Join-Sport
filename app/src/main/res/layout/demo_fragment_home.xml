@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_join_sport"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/desc_onboarding_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_joint_sports" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_join_sport">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+
+            <ImageView
+                android:id="@+id/iv_photo_profile"
+                style="@style/BasicPhotoProfile"
+                android:contentDescription="@string/desc_img_pp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_account_region"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_account_name"
+                app:srcCompat="@drawable/img_photo_profile_3" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                style="@style/TimelineName"
+                android:text="@string/txt_account_name"
+                app:layout_constraintStart_toEndOf="@+id/iv_photo_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_account_region"
+                style="@style/Reguler"
+                android:layout_marginTop="0dp"
+                android:text="@string/txt_account_region"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/iv_photo_profile"
+                app:layout_constraintTop_toBottomOf="@+id/tv_account_name" />
+
+            <ImageView
+                android:id="@+id/iv_post_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/desc_img_post_settings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_post_settings" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_post_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_account_region"
+                app:shapeAppearanceOverlay="@style/AllSideRounded"
+                app:srcCompat="@drawable/img_post_timeline" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                style="@style/TimelineName"
+                app:drawableLeftCompat="@drawable/ic_comment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_post_img" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".DetailActivity">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/iv_back"
@@ -26,7 +24,7 @@
         <TextView
             android:id="@+id/textView"
             style="@style/TimelineName"
-            android:text="@string/txt_detail_post"
+            android:text="@string/txt_detail_place"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="@+id/iv_back"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +32,7 @@
             app:layout_constraintTop_toTopOf="@+id/iv_back" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/iv_detail_post"
+            android:id="@+id/iv_detail_place"
             android:layout_width="0dp"
             android:layout_height="300dp"
             android:layout_marginHorizontal="32dp"
@@ -44,10 +42,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:shapeAppearance="@style/AllSideRounded"
-            app:srcCompat="@drawable/img_post_timeline" />
+            app:srcCompat="@drawable/img_place" />
 
         <TextView
-            android:id="@+id/tv_detail_post"
+            android:id="@+id/txt_lbl_title"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_lbl_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_place" />
+
+        <TextView
+            android:id="@+id/tv_detail_place"
             style="@style/Reguler"
             android:layout_width="0dp"
             android:layout_marginTop="16dp"
@@ -56,7 +63,28 @@
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_detail_post" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_lbl_title" />
+
+        <TextView
+            android:id="@+id/txt_lbl_address"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_lbl_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_place" />
+
+        <TextView
+            android:id="@+id/tv_detail_address"
+            style="@style/Reguler"
+            android:layout_width="0dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/txt_detail_lorem_ipsum"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_lbl_address" />
 
         <TextView
             android:id="@+id/txt_lbl_comment"
@@ -65,7 +93,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txt_comment"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_detail_post" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_address" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_detail_comment"
@@ -86,6 +114,7 @@
             android:layout_margin="16dp"
             android:layout_marginBottom="16dp"
             app:cardCornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rv_detail_comment">

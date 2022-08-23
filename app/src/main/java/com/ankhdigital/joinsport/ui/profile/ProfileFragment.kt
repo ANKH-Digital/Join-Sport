@@ -1,10 +1,12 @@
 package com.ankhdigital.joinsport.ui.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.ankhdigital.joinsport.EditProfileActivity
 import com.ankhdigital.joinsport.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -25,6 +27,20 @@ class ProfileFragment : Fragment() {
         val root: View = binding.root
 
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.apply {
+            ivSettings.setOnClickListener {
+                val goToEditProfile = Intent(requireContext(), EditProfileActivity::class.java)
+                startActivity(goToEditProfile)
+            }
+            /*
+            * for demo only, pls delete related code below when already connect to api*/
+            icItemlistPostProfile.root.visibility = View.VISIBLE
+        }
     }
 
     override fun onDestroyView() {
