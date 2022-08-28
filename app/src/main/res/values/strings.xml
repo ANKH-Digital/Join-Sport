@@ -4,6 +4,7 @@
     <string name="btn_login">Login</string>
     <string name="btn_save">Simpan</string>
     <string name="btn_upload">Upload</string>
+    <string name="btn_update">Update</string>
     <string name="desc_appname">App Name</string>
     <string name="desc_ic_back">Icon of back button</string>
     <string name="desc_ic_send">Icon of send comment</string>
@@ -48,6 +49,7 @@
     <string name="txt_max_size">(Max Size : 3MB)</string>
     <string name="txt_name_2">Aldebaran Reo</string>
     <string name="txt_new_post">Post Baru</string>
+    <string name="txt_update_post">Update Post</string>
     <string name="txt_no_telp">No. Telp</string>
     <string name="txt_place">Places</string>
     <string name="txt_post_comment">98</string>
