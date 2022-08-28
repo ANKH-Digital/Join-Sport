@@ -37,17 +37,6 @@
             app:layout_constraintStart_toEndOf="@+id/iv_photo_profile"
             app:layout_constraintTop_toBottomOf="@+id/tv_account_name" />
 
-        <ImageView
-            android:id="@+id/iv_post_settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/desc_img_post_settings"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_post_settings" />
-
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/iv_post_img"
             android:layout_width="wrap_content"

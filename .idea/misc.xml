@@ -5,10 +5,13 @@
       <map>
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/activity_edit_profile.xml" value="0.1" />
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/fragment_edit.xml" value="0.358695652173913" />
+        <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/fragment_home.xml" value="0.358695652173913" />
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/fragment_upload.xml" value="0.25" />
+        <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/item_menu.xml" value="0.358695652173913" />
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/itemlist_main_timeline.xml" value="0.358695652173913" />
         <entry key="..\:/Desktop/Join-Sport/app/src/main/res/layout/itemlist_post_profile.xml" value="0.38697916666666665" />
+        <entry key="..\:/Desktop/Join-Sport/app/src/main/res/menu/popup_menu.xml" value="0.31666666666666665" />
         <entry key="..\:/Users/muhiq/AndroidStudioProjects/JoinSport/app/src/main/res/drawable/bg_button.xml" value="0.224" />
         <entry key="..\:/Users/muhiq/AndroidStudioProjects/JoinSport/app/src/main/res/drawable/bg_rectangle_button.xml" value="0.191" />
         <entry key="..\:/Users/muhiq/AndroidStudioProjects/JoinSport/app/src/main/res/drawable/bg_rectangle_gray_button.xml" value="0.1" />

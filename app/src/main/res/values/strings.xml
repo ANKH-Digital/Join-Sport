@@ -2,6 +2,8 @@
     <string name="app_name">Join Sport</string>
     <string name="btn_get_started">Get Started</string>
     <string name="btn_login">Login</string>
+    <string name="item_edit">Edit</string>
+    <string name="item_delete">Hapus</string>
     <string name="btn_save">Simpan</string>
     <string name="btn_upload">Upload</string>
     <string name="btn_update">Update</string>
@@ -20,7 +22,7 @@
     <string name="hint_location">Lokasi Anda</string>
     <string name="hint_password">Password</string>
     <string name="hint_phone_number">No Telp Anda</string>
-    <string name="hint_write_comment">Tulis Komentar ...</string>
+    <string name="hint_write_comment">Tulis Komentars...</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
