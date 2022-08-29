@@ -27,12 +27,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/iv_back" />
 
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_post_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:shapeAppearanceOverlay="@style/AllSideRounded"
+        app:srcCompat="@drawable/img_post_timeline" />
+
     <TextView
         android:id="@+id/tv_caption"
         style="@style/Bold"
         android:text="@string/txt_caption"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_post_img" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_caption"
@@ -43,7 +58,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_caption"
-        app:placeholderText="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit o"
+        app:placeholderText="Masukan caption"
         app:placeholderTextColor="#5c5c5c">
 
         <com.google.android.material.textfield.TextInputEditText
