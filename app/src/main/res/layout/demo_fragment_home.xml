@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:padding="12dp">
 
-
             <ImageView
                 android:id="@+id/iv_photo_profile"
                 style="@style/BasicPhotoProfile"
