@@ -1,21 +1,16 @@
 package com.ankhdigital.joinsport.ui.home
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.PopupWindow
 import android.widget.Toast
 import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import com.ankhdigital.joinsport.DetailActivity
 import com.ankhdigital.joinsport.R
 import com.ankhdigital.joinsport.databinding.DemoFragmentHomeBinding
-import com.ankhdigital.joinsport.databinding.MenuActionBinding
-import java.lang.Exception
 
 class HomeFragment : Fragment() {
 
@@ -36,15 +31,6 @@ class HomeFragment : Fragment() {
     ): View {
 
         _binding = DemoFragmentHomeBinding.inflate(inflater, container, false)
-//        val popupInflater = requireActivity().applicationContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-//        val popupBind = MenuActionBinding.bind(popupInflater)
-//
-//        val popupWindow = PopupWindow(
-//            popupBind.root, 126,
-//            89, true
-//        ).apply { contentView.setOnClickListener { dismiss() } }
-//
-//        binding.ivPostSettings.setOnClickListener(popupWindow::showAsDropDown)
         val root: View = binding.root
 
         return root

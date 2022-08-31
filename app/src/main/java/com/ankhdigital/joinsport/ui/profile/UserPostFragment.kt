@@ -9,7 +9,6 @@ import androidx.appcompat.widget.PopupMenu
 import androidx.fragment.app.Fragment
 import com.ankhdigital.joinsport.R
 import com.ankhdigital.joinsport.databinding.ItemlistPostProfileBinding
-import java.lang.Exception
 
 class UserPostFragment : Fragment() {
     private var _binding: ItemlistPostProfileBinding? = null
@@ -28,6 +27,10 @@ class UserPostFragment : Fragment() {
         val root: View = binding.root
 
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.apply {
             ivPostSettings.setOnClickListener {
@@ -56,7 +59,6 @@ class UserPostFragment : Fragment() {
         try {
             val popup = PopupMenu::class.java.getDeclaredField("mPopup")
             popup.isAccessible = true
-            val menu = popup.get(popupMenu)
         } catch (e: Exception) {
             e.printStackTrace()
         } finally {
